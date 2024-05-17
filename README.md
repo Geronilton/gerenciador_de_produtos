@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Instalação de api pra conexão com o banco de dados.
+
+## npm install --save sequelize
+
+Drive para o banco de dados(tem que ter uma instalação pra cada banco de dados).
+
+## npm install --save mysql2
+
+Para gerenciar rotas do sistema instalar react-router.
+
+## npm install react-router-dom
+
+Para realizar requisições http.
+
+## npm install axios
+
+Pacote de midleware para receber solicitações de origens diferentes.
+
+## npm install cors
+
