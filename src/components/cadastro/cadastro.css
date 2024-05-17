@@ -1,0 +1,61 @@
+ body{
+    background-color: rgba(128, 128, 128, 0.135);
+ }
+ .divCadastro{
+   
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+ }
+.cadastro{ 
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 310px;
+    height: 350px;
+}
+form{
+    height: 150px;
+}
+h2{
+    text-align: center;
+}
+
+.labelNome, .labelEmail, .labelPass {
+    padding: 5px;
+    font-size: 17px;
+}
+
+.inputNome, .inputEmail,.inputPass{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 270px;
+    border: 1px solid black;
+}
+
+
+.buttonCadastrar{
+    margin-top: 8px;
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttonCadastrar:focus {
+    outline: none;
+}
+
+.buttonCadastrar:active {
+    transform: scale(0.95);
+}
