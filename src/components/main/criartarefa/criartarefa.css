@@ -1,0 +1,51 @@
+/* .subtitle{
+
+}*/
+.titleTarefa {
+    width: 300px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.desTarefa{
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+}
+
+.criarTarefa {
+    width:100%;
+    display: flex;
+    justify-content: center ;
+}
+
+.tarefa{
+    border: 1px solid black;
+    width: 52%;
+    height: 300px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.submit{
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.submit:focus {
+    outline: none;
+}
+
+.submit:active {
+    transform: scale(0.95);
+}
