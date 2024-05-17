@@ -1,11 +1,17 @@
 import React from "react";
 import './main.css'
-import Nav from '../navcontent/navcontent'
+import Nav from './navcontent/navcontent'
+
+// Reaproveitamente de estrutura
+import { Outlet } from 'react-router-dom';
 
 const main = () => {
-    return(
+    return (
         <main>
-            <Nav />
+            <div className="divContent">
+                <Nav />
+                <Outlet />
+            </div>
         </main>
     )
 }
