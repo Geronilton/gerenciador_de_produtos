@@ -1,7 +1,7 @@
 import React from "react";
 import './navcontent.css';
 
-const navcontent = () =>{
+const Navcontent = () =>{
     return(
         <div className="navContent">
         <nav>
@@ -28,4 +28,4 @@ const navcontent = () =>{
     )
 }
 
-export default navcontent;
+export default Navcontent;

@@ -1,7 +1,7 @@
 import React from "react";
 import './criartarefa.css'
 
-const criartarefa = () =>{
+const Criartarefa = () =>{
     return(
     <div className="criarTarefa">
         <div className="tarefa">
@@ -19,4 +19,4 @@ const criartarefa = () =>{
     )
 }
 
-export default criartarefa;
+export default Criartarefa;

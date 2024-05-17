@@ -5,7 +5,7 @@ import Nav from './navcontent/navcontent'
 // Reaproveitamente de estrutura
 import { Outlet } from 'react-router-dom';
 
-const main = () => {
+const Main = () => {
     return (
         <main>
             <div className="divContent">
@@ -16,4 +16,4 @@ const main = () => {
     )
 }
 
-export default main;
+export default Main;

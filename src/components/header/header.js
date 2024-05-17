@@ -1,7 +1,7 @@
 import React from "react";
 import './header.css'
 
-const header = () =>{
+const Header = () =>{
     return(
     <header>
         <form className="formSearch">
@@ -14,4 +14,4 @@ const header = () =>{
     );
 };
 
-export default header;
+export default Header;
