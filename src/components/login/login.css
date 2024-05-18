@@ -1,0 +1,18 @@
+
+ .divLogin{
+   
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+ }
+.login{ 
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 310px;
+    height: 350px;
+}
+
+

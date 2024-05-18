@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Cadastro from './components/cadastro/cadastro';
+import Login from './components/login/login'
 import Criartarefa from './components/main/criartarefa/criartarefa';
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/cadastro',
     element:<Cadastro />
+  },
+  {
+    path:'/login',
+    element:<Login />
   }
 ])
 
