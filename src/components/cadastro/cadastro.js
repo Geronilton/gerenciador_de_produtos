@@ -67,7 +67,7 @@ const Cadastro = () => {
           <br />
 
           <button 
-            className="buttonCadastrar" 
+            className="buttonSubmit" 
             type="button"
             onClick={cadastrar}
           >

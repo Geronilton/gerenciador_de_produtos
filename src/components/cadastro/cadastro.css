@@ -37,7 +37,7 @@ h2{
 }
 
 
-.buttonCadastrar{
+.buttonSubmit{
     margin-top: 8px;
     width: 100px;
     height: 24px;
@@ -49,13 +49,12 @@ h2{
     border: 0;
     font-size: 15px;
     cursor: pointer;
-    text-align: center;
 }
 
-.buttonCadastrar:focus {
+.buttonSubmit:focus {
     outline: none;
 }
 
-.buttonCadastrar:active {
+.buttonSubmit:active {
     transform: scale(0.95);
 }
