@@ -22,6 +22,27 @@ router.post("/cadastro",async (req,res)=>{
     }
  });
 
+router.post("/login", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const user = await User.findOne({ where: { email } });
+
+    if (!user) {
+      return res.status(404).send("Email não encontrado");
+    }
+
+    if (password !== user.password) {
+      return res.status(401).send("Senha incorreta");
+    }
+
+    res.status(200).json({ message: "Login realizado com sucesso", user });
+    console.log("Login realizado com sucesso");
+  } catch (error) {
+    res.status(500).send("Erro ao realizar login!");
+    console.log("Erro ao realizar login", error);
+  }
+});
+
 
 
  
