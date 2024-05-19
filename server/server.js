@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const app = express()
-// const Tarefa = require('../models/Tarefa')
+const Tarefa = require('../models/Tarefa')
 const User = require('../models/User')
 const cors = require('cors')
 
@@ -43,6 +43,18 @@ router.post("/login", async (req, res) => {
   }
 });
 
+
+router.post("/criartarefa", async (req,res)=>{
+  try{
+    const {titulo, descricao} = req.body;
+    await Tarefa.create({titulo,descricao});
+    res.status(201).send("Tarefa criada com sucesso");
+    console.log("tarefa criada!")
+  }catch(error){
+    console.log("error ao criar tarefa",error);
+    res.status(500).send('Erro ao criar tarefa');
+  }
+})
 
 
  
