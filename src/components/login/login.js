@@ -16,18 +16,18 @@ const Login = () => {
             const response = await axios.post('http://localhost:3001/login', {
                 email: email,
                 password: password
-            })
+            });
             if (response.status === 200) {
-                console.log("sucesso")
-                navigate("/")
-            }
+                console.log("sucesso");
+                navigate("/");
+            };
 
         } catch (error) {
-            alert("verifique se os campos estão corretos!")
-            console.log("erro ao logar(cliente)", error)
-        }
+            alert("verifique se os campos estão corretos!");
+            console.log("erro ao logar(cliente)", error);
+        };
 
-    }
+    };
 
     return (
         <div className="divLogin">
