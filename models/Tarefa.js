@@ -41,6 +41,6 @@ Tarefa.belongsTo(User, {
 
 
 Tarefa.sync();
-User.sync();
+// User.sync();
 
 module.exports = Tarefa;
