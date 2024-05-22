@@ -1,18 +1,20 @@
 import React from "react";
 import './main.css'
-import Nav from './navcontent/navcontent'
+import NavContent from './navcontent/navcontent'
+import Header from './header/header'
 
 // Reaproveitamente de estrutura
 import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
+  <div className="divContent">
+    <Header />
         <main>
-            <div className="divContent">
-                <Nav />
-                <Outlet />
-            </div>
+            <NavContent />
+            <Outlet />
         </main>
+  </div>
     )
 }
 
