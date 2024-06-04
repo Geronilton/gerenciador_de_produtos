@@ -1,24 +1,31 @@
 import React, { useState } from "react";
 import './cadastro.css';
-import axios from "axios";
+import { api } from "../../services/api";
 
 const Cadastro = () => {
 
-  const [nome, setNome] = useState('');
+  const [name, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const cadastrar = async () => {
+  const handleSaveUser = async (e) => {
+    e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/cadastro', {
-        name: nome,
-        email: email,
-        password: password
-      });
+      const data ={
+        name,
+        email,
+        password
+      }
+      const response = await api.post('/register', data);
+
+      if (response.status === 200){
+        alert("Usuário criado com sucesso");
+      }
+
       setNome('');
       setEmail('');
       setPassword('');
-      alert("Usuário criado com sucesso");
+      
     } catch (error) {
       console.log("Erro ao enviar os dados do formulário", error);
       alert("Erro ao enviar os dados do formulário");
@@ -29,7 +36,7 @@ const Cadastro = () => {
     <div className="divCadastro">
       <div className="cadastro">
         <h2>Cadastro</h2>
-        <form>
+        <form onSubmit={handleSaveUser}>
           <label className="labelNome" htmlFor="nome">Nome</label>
           <br />
           <input 
@@ -37,7 +44,7 @@ const Cadastro = () => {
             type="text"
             id="nome"
             placeholder="Digite seu nome"
-            value={nome} 
+            value={name} 
             onChange={(e) => setNome(e.target.value)} 
           />
           <br />
@@ -68,8 +75,7 @@ const Cadastro = () => {
 
           <button 
             className="buttonSubmit" 
-            type="button"
-            onClick={cadastrar}
+            type="submit"
           >
             Cadastrar
           </button>
