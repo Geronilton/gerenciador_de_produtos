@@ -69,23 +69,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Instalação de api pra conexão com o banco de dados.
 
+
+Os comandos abaixos são de pacotes necessarios para a aplicação.
+
+
+Instalação de api pra conexão com o banco de dados.
 ## npm install --save sequelize
 
 Drive para o banco de dados(tem que ter uma instalação pra cada banco de dados).
-
 ## npm install --save mysql2
 
 Para gerenciar rotas do sistema instalar react-router.
-
+Roteamento em aplicações web React
 ## npm install react-router-dom
 
 Para realizar requisições http.
-
 ## npm install axios
 
 Pacote de midleware para receber solicitações de origens diferentes.
-
 ## npm install cors
 
+criptografia de senha.
+## npm install bcrypt
+
+JWT (JSON Web Token) é um formato seguro e compacto para troca de informações entre partes, comumente usado para autenticação em aplicações web e APIs. Ele consiste em três partes: cabeçalho, payload e assinatura.
+## npm install jsonwebtoken
