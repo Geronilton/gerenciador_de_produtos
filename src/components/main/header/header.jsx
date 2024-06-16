@@ -7,7 +7,7 @@ const Header = () =>{
         <form className="formSearch">
             <input className="inputSearch" 
             type="text" name="search" 
-            title="Pesquisar" placeholder="Pesquisar uma tarefa" ></input>
+            title="Pesquisar" placeholder="Pesquisar um Produto" ></input>
             <button className="buttonSearch" type="submit">Pesquisar</button>
         </form>
     </header>
