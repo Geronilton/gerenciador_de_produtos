@@ -8,13 +8,13 @@ import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-  <div className="divContent">
-    <Header />
-        <main>
-            <NavContent />
-            <Outlet />
-        </main>
-  </div>
+      <div className="divContent">
+        <Header />
+            <main>
+                <NavContent />
+                <Outlet />
+            </main>
+      </div>
     )
 }
 
