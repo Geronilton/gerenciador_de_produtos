@@ -7,27 +7,25 @@ const NavContent = () =>{
     return(
         <div className="navContent">
         <nav>
-           <Link to='#' >
-            <div className="boxAdiciona">
-                    <span>Adicionar uma tarefa</span>
+        
+                <Link to='criarProduto' >
+                <div className="boxAdiciona">
+                    <div><span>Cadastrar Produto</span></div>
                 </div>
-           </Link>
+                </Link>
+        
 
-           <Link to='#' >
-            <div className="boxPendente">
-                    <span>Pendente</span>
+           <Link to='listagemProdutos' >
+            <div className="boxlistagem">
+                    <span>listar Produto</span>
                 </div>
            </Link>     
            
-            <Link to='#' >
-            <div className="boxConcluido">
-                    <span>Concluido</span>
+            <Link to='estoque' >
+            <div className="boxEstoque">
+                    <span>Estoque</span>
                 </div>
            </Link>
-
-           
-
-
         </nav>
         </div>
     )
