@@ -8,7 +8,7 @@ Este projeto é um sistema de gerenciamento de produtos que requer autenticaçã
 
 Autenticação de usuário: Login seguro com autenticação baseada em token.
 CRUD de Produtos: Operações completas de criação, leitura, atualização e remoção de produtos.
-Interface Amigável: Interface intuitiva e responsiva para facilitar a navegação e uso.
+Interface Amigável: Interface intuitiva.
 
 ## Tecnologias Utilizadas
 Frontend: React.js com React Router para navegação.
