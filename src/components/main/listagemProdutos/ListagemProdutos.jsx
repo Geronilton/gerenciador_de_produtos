@@ -60,12 +60,12 @@ const ListagemProdutos = () => {
                                 <td>{produto.description}</td>
                                 <td>R$ {produto.price}</td>
                                 <td>{produto.estoque} un</td>
-                                <td>{produto.validade}</td>
+                                <td>{new Date(produto.validade).toLocaleDateString()}</td>
                                 <td>
-                                    {/* <Link to={`/editarProduto/${produto.id}`}>
-                                        Editar
-                                    </Link> */}
-                                    <button className="buttonExcluir" onClick={() => handleDelete(produto.id)}>Excluir</button>
+                                <Link to={`/editarProduto/${produto.id}`}>
+                                    <button className="submit">Editar</button>
+                                </Link>
+                                    <button className="buttonN" onClick={() => handleDelete(produto.id)}>Excluir</button>
                                 </td>
                             </tr>
                         ))}

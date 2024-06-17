@@ -144,7 +144,7 @@ const Estoque = () => {
                                             />
                                             <br />
                                             <button
-                                                className="submit"
+                                                className="buttonN"
                                                 type="submit">Retirar
                                             </button>
                                         </form>
