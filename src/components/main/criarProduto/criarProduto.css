@@ -39,6 +39,7 @@ form{
 }
 
 .submit{
+    margin-top: 8px;
     width: 100px;
     height: 24px;
     border-radius: 10px;

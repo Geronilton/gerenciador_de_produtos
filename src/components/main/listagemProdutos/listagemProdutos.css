@@ -5,12 +5,7 @@
     margin-bottom:8px ;
 }
 
-/* .listagemProdutos{
-
- 
-} */
-
-.buttonExcluir{
+.buttonN{
     margin-top: 8px;
     width: 100px;
     height: 24px;
@@ -24,11 +19,11 @@
     cursor: pointer;
 }
 
-.buttonExcluir:focus {
+.buttonN:focus {
     outline: none;
 }
 
-.buttonExcluir:active {
+.buttonN:active {
     transform: scale(0.95);
 }
 
