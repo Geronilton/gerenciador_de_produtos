@@ -6,18 +6,22 @@ import PrivateRoutes from './privateRoutes'
 import CriarProduto from '../components/main/criarProduto/criarProduto'
 import ListagemProdutos from '../components/main/listagemProdutos/ListagemProdutos';
 import Estoque from '../components/main/estoque/Estoque';
-// import EditarProduto from '../components/main/editarProduto/EditarProduto';
+import EditarProduto from '../components/main/editarProduto/EditarProduto';
+import SearchResults from '../components/main/searchResults/SearchResults';
+import { SearchProvider } from '../context/searchContext';
 
 export const AppRouter = () => {
     return (
-        <Router>
+    <SearchProvider>
+            <Router>
             <Routes>
                 <Route path='/' element={<PrivateRoutes />}>
                     <Route path="/" element={<Main />}>
                         <Route path="criarProduto" element={<CriarProduto />} />
                         <Route path="listagemProdutos" element={<ListagemProdutos />} />
                         <Route path="estoque" element={<Estoque />} />
-                        {/* <Route path='editarProduto' element={<EditarProduto/>} /> */}
+                        <Route path='editarProduto/:id' element={<EditarProduto/>} />
+                        <Route path="resultados" element={<SearchResults />} />
                     </Route>
                 </Route>
 
@@ -25,5 +29,6 @@ export const AppRouter = () => {
                 <Route path="/cadastro" element={<Cadastro />} />
             </Routes>
         </Router>
+    </SearchProvider>
     );
 }
